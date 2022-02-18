@@ -1,3 +1,10 @@
+"""
+@Author: Shital Bajait
+@Date: 18-02-2022 14:32:00
+@Last Modified by: Shital Bajait 
+@Last Modified time: 18-32-2022 14:32:00
+@Title : compare lengths 1ft = 12in
+"""
 from InvalidTypeException import InvalidTypeException
 from InvalidTypeException import ExceptionType
 import logging
