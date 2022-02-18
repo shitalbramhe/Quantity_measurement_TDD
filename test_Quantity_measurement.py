@@ -30,3 +30,17 @@ class TestQuantitymeasurement(unittest.TestCase):
     def test_inch_feet(self):
         self.assertNotEqual(Quantitymeasurement.inch_to_feet(1,'Inch'),1,'Feet')
         self.assertEqual(Quantitymeasurement.inch_to_feet(12,'Inch'),1,'Feet')
+
+    def tes_feet_yard(self):
+        self.assertEqual(Quantitymeasurement.feet_yard(3,'Feet'),1,'yard')
+        self.assertNotEqual(Quantitymeasurement.feet_yard(1,'Feet'),1,'yard')
+
+    def test_inch_yard(self):
+        self.assertNotEqual(Quantitymeasurement.inch_yard(1,'Inch'),1,'yard')
+        self.assertEqual(Quantitymeasurement.inch_yard(36,'Inch'),1,'yard')
+
+    def test_yard_inch(self):
+        self.assertEqual(Quantitymeasurement.yard_inch(1,'yard'),36,'Inch')
+
+    def test_yard_feet(self):
+        self.assertEqual(Quantitymeasurement.yard_feet(1,'yard'),3,'Feet')
