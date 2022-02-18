@@ -70,7 +70,33 @@ class Quantitymeasurement():
         """
         id(value) 
         return id(value)  
-        
+
+    def inch_to_feet(value, unit):
+        """
+                Description:
+                    Function to convert inch to feet if unit is Feet
+                Parameter:
+                    value
+                Return:
+                    value in inch
+        """
+        if not unit == 'Inch':
+           raise InvalidTypeException(ExceptionType.NOT_INCH_EXCEPTION.value)
+        return value/12 
+    
+    def feet_to_inch(value, unit):
+        """
+                Description:
+                    Function to convert feet to inch if unit is Feet
+                Parameter:
+                    value
+                Return:
+                    value in Feet
+        """
+        if not unit == 'Feet':
+            raise InvalidTypeException(ExceptionType.NOT_FEET_EXCEPTION.value)
+        return value*12
+                
              
 #if __name__ == '__main__':
  #   Quantitymeasurement.feet_to_inch_Null(8)

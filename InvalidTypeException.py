@@ -6,6 +6,8 @@ class ExceptionType(enum.Enum):
     TYPE_CHECK_EXCEPTION = "Given value is not int type, enter integer value"
     REFERENCE_CHECK_EXCEPTION = "Reference of given value is not same, must enter proper value"
     VALUE_EXCEPTION = "Given value is not proper"
+    NOT_FEET_EXCEPTION = "Given unit is not a feet"
+    NOT_INCH_EXCEPTION = "Given unit is not a Inch"
     
 
 
